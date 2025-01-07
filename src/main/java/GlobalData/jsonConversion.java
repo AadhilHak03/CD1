@@ -15,8 +15,8 @@ public class jsonConversion {
 
 	public static List<HashMap<String,String>> jsonCon(String args) throws IOException {
 		// TODO Auto-generated method stub
-			String js = FileUtils.readFileToString(new File("C:\\Users\\aadhi\\eclipse-workspacePractice\\PracticeConcetps\\src\\main\\java\\GlobalData\\payLoad.json"), 
-					StandardCharsets.UTF_8);
+		String filePath = System.getProperty("user.dir")+"/src/main/java/GlobalData/payLoad.json";
+			String js = FileUtils.readFileToString(new File(filePath), StandardCharsets.UTF_8);
 			
 			ObjectMapper map = new ObjectMapper();
 			List<HashMap<String,String>> data =map.readValue(js, new TypeReference<List<HashMap<String,String>>>(){});
