@@ -25,6 +25,11 @@ public class MainBlock {
 	
 	}
 	
+	@Test
+	public void t3() {
+		System.out.println("new push");
+	}
+	
 
 	
 

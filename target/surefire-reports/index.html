@@ -92,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods,   2 passed</span>
+                    <span class="method-stats">3 methods,   3 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -109,6 +109,11 @@
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="ListenersPackage.MainBlock" class="method navigator-link" hash-for-method="t2">t2</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="ListenersPackage.MainBlock" class="method navigator-link" hash-for-method="t3">t3</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -141,6 +146,13 @@
                   <a name="t2">
                   </a> <!-- t2 -->
                   <span class="method-name">t2</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="t3">
+                  </a> <!-- t3 -->
+                  <span class="method-name">t3</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -200,20 +212,24 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(3);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 't1')
 data.setCell(0, 2, 'ListenersPackage.MainBlock')
-data.setCell(0, 3, 31);
+data.setCell(0, 3, 18);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 't2')
+data.setCell(1, 1, 't3')
 data.setCell(1, 2, 'ListenersPackage.MainBlock')
-data.setCell(1, 3, 1);
+data.setCell(1, 3, 2);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 't2')
+data.setCell(2, 2, 'ListenersPackage.MainBlock')
+data.setCell(2, 3, 2);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 32 ms</span>
+              <span class="suite-total-time">Total running time: 22 ms</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -246,7 +262,11 @@ return data;
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">t2</span>
-                <span class="method-start">42 ms</span>
+                <span class="method-start">27 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">t3</span>
+                <span class="method-start">31 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
